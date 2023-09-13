@@ -46,7 +46,7 @@ public class CalcolaBiglietto {
 			double prezzo = prezzoPieno - (prezzoPieno * scontoMinori / 100);
 
 			// mostro il risultato a schermo
-			System.out.println("il Prezzo del biglietto è " + prezzo + "€");
+			System.out.println("il Prezzo del biglietto è " + String.format("%.02f",prezzo) + "€");
 
 			// entro nella condizione se l'èta del passeggero è superiore o uguale a 65
 		} else if (etaPasseggero >= 65) {
@@ -56,13 +56,13 @@ public class CalcolaBiglietto {
 			double prezzo = prezzoPieno - (prezzoPieno * scontoOver / 100);
 
 			// mostro il risultato a schermo
-			System.out.println("il Prezzo del biglietto è " + prezzo + "€");
+			System.out.println("il Prezzo del biglietto è " + String.format("%.02f",prezzo) + "€");
 
 			// entro nella condizione se l'èta del passeggero è compresa tra 18 e 64
 		} else {
 
 			// mostro il risultato a schermo
-			System.out.println("il Prezzo del biglietto è " + prezzoPieno + "€");
+			System.out.println("il Prezzo del biglietto è " + String.format("%.02f",prezzoPieno) + "€");
 		}
 
 	}
