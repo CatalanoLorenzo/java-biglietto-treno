@@ -6,7 +6,7 @@ public class CalcolaBiglietto {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Scrivi il tuo nomei kilometri che vuoi percorrere");
+		System.out.println("Scrivi i kilometri che vuoi percorrere");
 		
 		int km = input.nextInt();
 		
