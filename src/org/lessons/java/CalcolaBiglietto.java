@@ -24,16 +24,16 @@ public class CalcolaBiglietto {
 		
 		double prezzoPieno =  prezzoKm * km ;
 		
-		if(etaPasseggero <= 18) {
+		if(etaPasseggero < 18) {
 		
-			double prezzo = prezzoPieno * scontoMinori / 100 ;
+			double prezzo = prezzoPieno - (prezzoPieno * scontoMinori / 100) ;
 			
 			System.out.println("il Prezzo del biglietto è " + prezzo + "€");
 
 			
 		}else if (etaPasseggero >= 65) {
 		
-			double prezzo = prezzoPieno * scontoOver / 100 ;
+			double prezzo = prezzoPieno - (prezzoPieno * scontoOver / 100 );
 			
 			System.out.println("il Prezzo del biglietto è " + prezzo + "€");
 			
