@@ -22,26 +22,26 @@ public class CalcolaBiglietto {
 		
 		int scontoOver = 40;
 		
-		int prezzoPieno = (int) (prezzoKm * km) ;
+		double prezzoPieno =  prezzoKm * km ;
 		
 		if(etaPasseggero <= 18) {
 		
-			int prezzo = prezzoPieno * scontoMinori / 100 ;
+			double prezzo = prezzoPieno * scontoMinori / 100 ;
 			
-			System.out.println("il Prezzo del biglietto è " + prezzo);
+			System.out.println("il Prezzo del biglietto è " + prezzo + "€");
 
 			
 		}else if (etaPasseggero >= 65) {
 		
-			int prezzo = prezzoPieno * scontoOver / 100 ;
+			double prezzo = prezzoPieno * scontoOver / 100 ;
 			
-			System.out.println("il Prezzo del biglietto è " + prezzo);
+			System.out.println("il Prezzo del biglietto è " + prezzo + "€");
 			
 		}else {
 			
-			int prezzo = prezzoPieno;
+			double prezzo = prezzoPieno;
 			
-			System.out.println("il Prezzo del biglietto è " + prezzo);
+			System.out.println("il Prezzo del biglietto è " + prezzo + "€");
 		}
 		
 	}	
